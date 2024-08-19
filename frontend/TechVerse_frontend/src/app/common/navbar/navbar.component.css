@@ -1,0 +1,47 @@
+nav{
+  display:flex;
+  justify-content: space-between;
+  padding: 25px 50px;
+}
+
+.navlinks{
+  display: flex;
+  gap: 40px;
+
+  a{
+    padding: 10px;
+    border-radius: 30px;
+    width:90px;
+    height: 30px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .home{
+    background-color: #222;
+    color:white;
+    padding: 10px;
+    border-radius: 30px;
+    width:90px;
+    height: 30px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    justify-content: center;
+
+
+  }
+}
+
+h3{
+  font-size: 20px;
+}
+
+.navicons{
+  display: flex;
+  gap: 20px;
+}
+
+

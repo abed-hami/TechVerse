@@ -1,0 +1,53 @@
+
+
+.container {
+
+  background-image: url("../../../assets/images/background.png");
+  background-size: cover;
+  height: 90vh;
+  max-width: 100vw;
+  display: flex;
+
+  align-items: center; /* Center vertically */
+
+}
+
+.description{
+  margin: 0 60px;
+  line-height: 40px;
+
+}
+
+.headline{
+  font-size: 33px;
+  line-height: 45px;
+}
+
+.product-highlight{
+  font-size: 25px;
+}
+
+.offer{
+  font-size: 20px;
+
+  span{
+    padding-left: 3px;
+  }
+}
+
+i{
+  padding-left: 3px;
+}
+
+.btn-container{
+  width: 145px;
+  background: linear-gradient(90deg, #ff6a00, #ee0978e1);
+  padding: 10px 20px;
+  border-radius: 20px;
+  height:35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
