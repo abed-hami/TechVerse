@@ -1,18 +1,22 @@
 <nav>
-  <div>
-    <h3>TECH<span class="verse">VERSE</span></h3>
+  <div class="main">
+    <a href="#"><h3 class="title">TECH<span class="text-indigo-600">VERSE</span></h3></a>
+    <div class="hamburger-icon" (click)="viewNavigation()" >
+      <i class="bi bi-list"></i>
+    </div>
   </div>
 
+
   <div class="navlinks">
-    <a href="#home" class="home">Home</a>
+    <a href="#home" class="text-indigo-600">Home</a>
+    <a href="#categories">Categories</a>
     <a href="#products">Products</a>
-    <a href="#about">About</a>
     <a href="#contact">Contact</a>
   </div>
 
   <div class="navicons">
     <a href="#" class="">
-      <i class="fas fa-heart fa-lg"></i>
+      <i class="fas fa-search fa-lg"></i>
     </a>
     <a href="#" class="">
       <i class="fas fa-shopping-cart fa-lg"></i>

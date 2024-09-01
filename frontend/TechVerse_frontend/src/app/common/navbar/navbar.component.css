@@ -4,35 +4,28 @@ nav{
   padding: 25px 50px;
 }
 
+.hamburger-icon{
+  display: none;
+}
+
 .navlinks{
   display: flex;
   gap: 40px;
 
   a{
-    padding: 10px;
-    border-radius: 30px;
-    width:90px;
-    height: 30px;
+    padding: 0 10px;
+
+
     display: flex;
-    justify-self: center;
     align-items: center;
-    justify-content: center;
+
   }
 
-  .home{
-    background-color: #222;
-    color:white;
-    padding: 10px;
-    border-radius: 30px;
-    width:90px;
-    height: 30px;
-    display: flex;
-    justify-self: center;
-    align-items: center;
-    justify-content: center;
 
+}
 
-  }
+.home{
+  color:#2551C5
 }
 
 h3{
@@ -42,6 +35,70 @@ h3{
 .navicons{
   display: flex;
   gap: 20px;
+
 }
 
 
+
+.title{
+  font-size: 20px;
+}
+
+.verse{
+  color:#2551C5;
+  font-size: 20px;
+}
+
+@media only screen and (max-width: 767px) {
+  nav{
+    flex-direction: column;
+
+  }
+
+  .navlinks{
+
+    display: none;
+    padding-left: 0;
+    padding-top: 15px  ;
+    padding-bottom: 5px;
+
+
+
+  }
+
+  .navicons{
+
+    display: none;
+
+    padding-left: 6px;
+    padding-top: 5px;
+    i{
+      padding-right: 20px;
+    }
+  }
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .hamburger-icon{
+
+    display: block;
+    cursor: pointer;
+    i{
+      display: flex;
+      align-self: center;
+      font-size: 28px;
+      color: black;
+    }
+  }
+
+  .view{
+
+    display: block ;
+    a{
+      padding-bottom: 30px;
+    }
+  }
+}
