@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("TechVerse_backend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+a0dd83b2682673e5d4b889c805ff0782a1e4e8e4")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+39ef07aefba788a5482cd8f11c51c37e88d715f7")]
 [assembly: System.Reflection.AssemblyProductAttribute("TechVerse_backend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("TechVerse_backend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
