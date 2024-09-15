@@ -19,14 +19,8 @@ export class ProductsComponent {
     {img:'https://www.apple.com/v/iphone/home/bv/images/overview/select/iphone_15_pro__bpnjhcrxofqu_large.png',name:'iPhone 14 Pro',description:'The ultimate powerhouse',price:'999$'},
     {img:'https://www.apple.com/v/iphone/home/bv/images/overview/select/iphone_15_pro__bpnjhcrxofqu_large.png',name:'iPhone 15 Pro',description:'The ultimate powerhouse',price:'999$'},
     {img:'https://www.apple.com/v/iphone/home/bv/images/overview/select/iphone_15_pro__bpnjhcrxofqu_large.png',name:'iPhone 15 Pro',description:'The ultimate powerhouse',price:'999$'},
-    
+
   ];
-
-
-
-
-
-
 
 
 

@@ -1,0 +1,22 @@
+.title{
+  font-size: 30px;
+  padding: 10px 5px;
+}
+
+.head{
+
+  padding: 20px 50px;
+}
+
+.breadcrumb{
+  display: flex;
+  gap:10px;
+  i{
+    padding-top: 2px;
+  }
+}
+
+.products_view{
+  display: flex;
+  
+}

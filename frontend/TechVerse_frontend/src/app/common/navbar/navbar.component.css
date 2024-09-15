@@ -34,10 +34,13 @@ h3{
 
 .navicons{
   display: flex;
-  gap: 20px;
+  gap: 30px;
 
 }
 
+.active{
+  color:#2551C5
+}
 
 
 .title{
