@@ -1,13 +1,30 @@
-import { Component } from '@angular/core';
+import { ViewportScroller } from '@angular/common';
+import { Component, ElementRef, ViewChild } from '@angular/core';
+import { NavigationEnd, Router, RouterModule } from '@angular/router';
+import { filter } from 'rxjs';
+import { BadgeModule } from 'primeng/badge';
 
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [],
+  imports: [RouterModule,BadgeModule],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })
 export class NavbarComponent {
+
+  constructor(private router: Router, private viewportScroller: ViewportScroller) {}
+
+  ngOnInit() {
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      const fragment = this.router.url.split('#')[1];
+      if (fragment) {
+        this.viewportScroller.scrollToAnchor(fragment);
+      }
+    });
+  }
 
   viewNavigation(){
     let links=document.getElementsByClassName("navlinks");
@@ -30,5 +47,7 @@ export class NavbarComponent {
     }
 
   }
+
+
 
 }

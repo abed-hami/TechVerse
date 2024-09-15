@@ -1,0 +1,56 @@
+<div class="card flex justify-content-center">
+  <p-accordion [multiple]="true" [activeIndex]="[0]" >
+      <p-accordionTab header="Search"  >
+
+
+        <div class="inputBox_container">
+          <svg class="search_icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" alt="search icon">
+            <path d="M46.599 46.599a4.498 4.498 0 0 1-6.363 0l-7.941-7.941C29.028 40.749 25.167 42 21 42 9.402 42 0 32.598 0 21S9.402 0 21 0s21 9.402 21 21c0 4.167-1.251 8.028-3.342 11.295l7.941 7.941a4.498 4.498 0 0 1 0 6.363zM21 6C12.717 6 6 12.714 6 21s6.717 15 15 15c8.286 0 15-6.714 15-15S29.286 6 21 6z">
+            </path>
+          </svg>
+          <input class="inputBox" id="inputBox" type="text" placeholder="Search For Products">
+        </div>
+
+
+
+
+      </p-accordionTab>
+      <p-accordionTab header="Categories" >
+
+        <ng-container *ngFor="let category of categories">
+          <div class="flex flex-col space-y-2 px-3 py-1">
+            <label class="flex items-center justify-between w-full">
+              <div class="flex items-center">
+                <input type="radio" name="category" value="{{category}}" class="form-radio text-indigo-600 focus:ring-indigo-500">
+                <span class="ml-2 px-3">{{category}}</span>
+              </div>
+              <div class="quantity">
+                <p>(5)</p>
+              </div>
+            </label>
+          </div>
+        </ng-container>
+
+
+
+      </p-accordionTab>
+      <p-accordionTab header="Filter by" >
+        <ng-container *ngFor="let category of categories">
+          <div class="flex items-center justify-between px-3 py-1">
+            <div class="flex items-center">
+              <input
+                type="checkbox"
+                id="{{category}}"
+                name="category"
+                value="{{category}}"
+                class="form-checkbox text-indigo-600 focus:ring-indigo-500"
+              >
+              <label for="{{category}}" class="ml-2 px-3 text-gray-900">{{category}}</label>
+            </div>
+
+          </div>
+        </ng-container>
+
+      </p-accordionTab>
+  </p-accordion>
+</div>

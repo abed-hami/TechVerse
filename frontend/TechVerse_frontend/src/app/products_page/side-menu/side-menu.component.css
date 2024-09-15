@@ -1,0 +1,53 @@
+.card {
+
+  padding: 50px 0 0 50px;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+
+  width:305px
+}
+
+.tab{
+  background-color: black !important;
+}
+
+#firstaccordion{
+  background-color: red !important;
+}
+
+/* From Uiverse.io by OnCloud125252 */
+.inputBox_container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  max-width: 14em;
+  width: fit-content;
+  height: fit-content;
+  background-color: #eaebec;
+  border-radius: 0.8em;
+  overflow: hidden;
+}
+
+.search_icon {
+  height: 1em;
+  padding: 0 0.5em 0 0.8em;
+  fill: #252627;
+}
+
+.form-radio{
+  accent-color: #4f46e5
+}
+
+.inputBox {
+  background-color: transparent;
+  color: #272626;
+  outline: none;
+  width: 100%;
+  border: 0;
+  padding: 0.5em 1.5em 0.5em 0;
+  font-size: 1em;
+}
+
+::placeholder {
+  color: #232425;
+}
